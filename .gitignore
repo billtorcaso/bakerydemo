@@ -10,7 +10,7 @@
 .~*
 common/CACHE
 bakerydemo/settings/local.py
-bakerydemodb
+btb_bakerydemodb
 __pycache__
 .vagrant/
 /.vagrant/
