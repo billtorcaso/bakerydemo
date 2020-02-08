@@ -11,6 +11,7 @@
 common/CACHE
 bakerydemo/settings/local.py
 ### btb_bakerydemodb I'm saving this in git to make rollback easy.  Just during development.
+bakerydemo/collect_static
 __pycache__
 .vagrant/
 /.vagrant/
