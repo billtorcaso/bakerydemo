@@ -4,7 +4,7 @@
 {% block content %}
 {% image self.image fill-1920x600 as hero_img %}
 <div class="container-fluid hero" style="background-image:url('{{ hero_img.url }}')">
-<div class="hero-gradient-mask"></div>
+    {% comment %}<div class="hero-gradient-mask"></div>{% endcomment %}
     <div class="container">
         <div class="row">
             <div class="col-md-7 col-md-offset-2">
