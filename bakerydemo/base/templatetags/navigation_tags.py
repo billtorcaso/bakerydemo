@@ -100,3 +100,23 @@ def footer_text_get(context):
     return {
         'footer_text': footer_text,
     }
+
+
+@register.inclusion_tag('base/include/page_objects_count.html', takes_context=True)
+def page_objects_count(context):
+
+    page_objects_count = Page.objects.count() - 1  # Ignore the ROOT page, it is not renderable
+
+    return {
+        'page_objects_count': page_objects_count,
+    }
+
+
+@register.inclusion_tag('base/include/page_objects_all.html', takes_context=True)
+def page_objects_all(context):
+
+    page_objects_all = [thing for thing in Page.objects.all() if thing.title != "Root"]
+
+    return {
+        'page_objects_all': page_objects_all,
+    }

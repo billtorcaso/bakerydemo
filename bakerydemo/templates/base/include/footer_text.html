@@ -1,4 +1,6 @@
 {% load wagtailcore_tags %}
+{# Question: why not include navigation_tags.py, which is the home of 'footer_text' as a tag? #}
+{# Is it assumed that the enclosing template has done that already? #}
 
 <div class="copyright text-center text-muted" role="note">
     {{ footer_text|richtext }}
